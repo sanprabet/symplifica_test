@@ -47,5 +47,6 @@ Table of orders ( This list is fetched from PostgreSQL and created by the user )
 
   Each row needs to have: Order ID, Product
 
-  As the Index indicate, the combination of id and product_id needs to be unique for all orders
+  The combination of id and product_id needs to be unique for all orders
+  - This restriction is given by the orders Table and the "(id, product_id) [pk]" Index
   - This means theres only 1 product per order
